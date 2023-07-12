@@ -20,7 +20,7 @@ const books = [
     // Add more book objects as needed
   ];
   
-function save(){
+function saveLocal(){
     localStorage.setItem('books', JSON.stringify(books));
   }
 
