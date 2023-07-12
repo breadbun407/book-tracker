@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="src/client/styles.css" rel="stylesheet">
-    <link href="src/client/index.js">
+    <link href="src/client/search.js">
     <title>Document</title>
 </head>
 <body>
@@ -18,17 +18,20 @@
             <a class="nav-link" href="#">Books</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="search.html">Search</a>
+            <a class="nav-link" href="#">Search</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="addABook.html">Add a book</a>
           </li>
         </ul>
       </nav>
+
+    <form id="searchForm">
+        <input type="text" id="searchInput" placeholder="Search for a book">
+        <button type="submit">Search</button>
+      </form>
+
+      <div id="searchResultsContainer"></div>
       
-    <div>
-        Welcome to the trove. I read too much, and this is where I keep it all when my head begins to overflow.
-    </div>
-    
 </body>
 </html>
