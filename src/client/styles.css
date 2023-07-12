@@ -49,3 +49,10 @@ body {
 .nav-link:hover {
   color: #f5dd9d;
 }
+
+/*
+Add A Book form spacing
+*/
+input {
+  margin: 0.2rem;
+}
