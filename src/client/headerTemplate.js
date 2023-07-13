@@ -1,8 +1,17 @@
 const header = document.createElement("header");
 
 header.innerHTML = `
-  <h1> Golden Book Trove</h1>
+  <h1>Golden Book Trove</h1>
+
+  <div class="navbar-toggle">
+  <div class="toggle-icon" id="navbarToggle">
+  <span class="line"></span>
+  <span class="line"></span>
+  <span class="line"></span>
+</div>
+</div>
   <nav class="navbar">
+    
     <ul class="navbar-nav">
       <li class="nav-item">
         <a class="nav-link" href="index.html">Home</a>
@@ -17,20 +26,17 @@ header.innerHTML = `
         <a class="nav-link" href="addABook.html">Add a book</a>
       </li>
     </ul>
-    <div class="navbar-toggle">
-      <span class="toggle-icon" id="navbarToggle"></span>
-    </div>
   </nav>
 `;
 
-document.querySelector("body > div.header").appendChild(header);
+document.querySelector(".header").appendChild(header);
 
-const navbarToggle = document.getElementById("navbarToggle");
-const navbarNav = document.querySelector(".navbar-nav"); // Updated selector
+const toggleIcon = document.getElementById("navbarToggle");
+const navbarNav = document.querySelector(".navbar-nav");
 
-document.addEventListener("DOMContentLoaded", function () {
-  navbarToggle.addEventListener("click", function () {
-    navbarToggle.classList.toggle("active");
+window.addEventListener("DOMContentLoaded", function () {
+  toggleIcon.addEventListener("click", function () {
+    toggleIcon.classList.toggle("active");
     navbarNav.classList.toggle("active");
   });
 });
