@@ -40,6 +40,9 @@ a:hover {
   padding: 0;
   list-style-type: none;
 }
+.navbar-nav.active {
+  display: flex; /* or any other desired property to show the element */
+}
 
 .nav-item {
   margin: 0 10px;
@@ -58,6 +61,10 @@ a:hover {
 .navbar-toggle {
   display: none;
   cursor: pointer;
+}
+
+.active {
+  display: none; /* or any other desired property to show the element */
 }
 
 .toggle-icon {
