@@ -17,7 +17,7 @@ header.innerHTML = `
         <a class="nav-link" href="index.html">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Books</a>
+        <a class="nav-link" href="books.html">Books</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="search.html">Search</a>

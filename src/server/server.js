@@ -21,6 +21,10 @@ app.get("/addABook", (req, res) => {
   res.sendFile(path.join(__dirname, "..", "client", "addABook.html"));
 });
 
+app.get("/books", (req, res) => {
+  res.sendFile(path.join(__dirname, "..", "client", "books.html"));
+});
+
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);
 });
