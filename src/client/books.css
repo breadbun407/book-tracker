@@ -1,0 +1,14 @@
+.page-button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    border: none;
+    background-color: transparent;
+    color: #378347;
+    cursor: pointer;
+  }
+  
+  .page-button.active {
+    background-color: #378347;
+    color: #fff;
+  }
+  
